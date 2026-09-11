@@ -1,7 +1,7 @@
 import { getAnomalies } from '../../lib/api.js';
 import { getRole } from '../../lib/guards.js';
 
-const BASE = 'http://localhost:3001/api';
+const BASE = 'https://praman-api.onrender.com/api';
 const $ = (id) => document.getElementById(id);
 
 // Fallback demo anomalies when API offline: one per inbox filter.

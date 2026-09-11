@@ -1,7 +1,7 @@
 import { drawAssignment } from '../../lib/api.js';
 import { getRole, guardAssignments } from '../../lib/guards.js';
 
-const BASE = 'http://localhost:3001/api';
+const BASE = 'https://praman-api.onrender.com/api';
 const $ = (id) => document.getElementById(id);
 
 const DEMO_ROTATION = [

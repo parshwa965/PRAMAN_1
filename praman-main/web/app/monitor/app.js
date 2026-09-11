@@ -1,7 +1,7 @@
 import { getCCTV } from '../../lib/api.js';
 import { getRole } from '../../lib/guards.js';
 
-const BASE = 'http://localhost:3001/api';
+const BASE = 'https://praman-api.onrender.com/api';
 const $ = (id) => document.getElementById(id);
 const token = () => localStorage.getItem('praman_jwt') || '';
 const auth = () => ({ 'Content-Type': 'application/json', ...(token() ? { Authorization: 'Bearer ' + token() } : {}) });

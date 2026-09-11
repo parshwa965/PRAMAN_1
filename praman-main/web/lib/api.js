@@ -1,4 +1,4 @@
-const BASE = 'http://localhost:3001/api';
+const BASE = 'https://praman-api.onrender.com/api';
 
 function authHeaders(extra = {}) {
   const token = localStorage.getItem('praman_jwt') || '';
