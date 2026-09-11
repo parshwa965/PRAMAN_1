@@ -1,0 +1,22 @@
+[
+  {
+    "id": "FAC-KL-01",
+    "name": "Thrissur Senior Home",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "type": "senior-home",
+    "lat": 10.5276,
+    "lon": 76.2144,
+    "capacity": 100
+  },
+  {
+    "id": "FAC-BR-01",
+    "name": "Gaya Rehab Centre",
+    "district": "Gaya",
+    "state": "Bihar",
+    "type": "rehab",
+    "lat": 24.7914,
+    "lon": 85.0002,
+    "capacity": 80
+  }
+]

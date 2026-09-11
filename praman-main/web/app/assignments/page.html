@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Praman — Assignments</title>
+<link rel="stylesheet" href="../../lib/praman.css">
+</head>
+<body>
+<div class="strip"><span>DoSJE / MoSJE · Inspection Dispatch</span><span class="live">LINK ACTIVE</span></div>
+<header class="masthead">
+<div class="kicker">Tamper-evident dispatch · cooling 30D</div>
+<h1>ASSIGN <span>/ Console</span></h1>
+<p class="sub">Random inspector draw · 30-day cooling · no same district twice · 48h surprise window · Operator <b id="role">—</b></p>
+</header>
+<nav class="tabs">
+<a href="../(dashboard)/page.html">Overview <small>01</small></a>
+<a href="../anomalies/page.html">Anomalies <small>02</small></a>
+<a href="./page.html" aria-current="page">Assignments <small>03</small></a>
+<a href="../monitor/page.html">Monitor <small>04</small></a>
+</nav>
+<main class="grid">
+<section class="card span6" id="assign-console" data-requires="dept"><h2 data-unit="DRW-01">Draw inspector</h2>
+<form id="draw-form" class="row">
+<div class="fld"><label class="f" for="facility">Facility</label>
+<select id="facility" name="facility_id">
+<option value="fac-012">fac-012 — Gaya</option>
+<option value="fac-021">fac-021 — Patna</option>
+<option value="fac-033">fac-033 — Muzaffarpur</option>
+<option value="fac-040">fac-040 — Bhagalpur</option>
+<option value="fac-077">fac-077 — Darbhanga</option>
+</select></div>
+<div class="fld"><label class="f" for="draw-btn">&nbsp;</label><button type="submit" id="draw-btn" class="btn red">Draw</button></div>
+</form>
+<p id="status" role="status">Pick a facility, then Draw.</p>
+<dl id="result" aria-live="polite"></dl>
+</section>
+<section class="card span6"><h2 data-unit="ROT-02">Rotation audit log</h2>
+<p class="unit">rotation: newest assignment per inspector, no-repeat enforced, cooling 30 days</p>
+<table class="ledger" aria-label="Rotation audit log">
+<thead><tr><th>Inspector</th><th>District</th><th>Date</th><th>Cooling status</th></tr></thead>
+<tbody id="rotation-rows"><tr><td colspan="4">Loading rotation log…</td></tr></tbody>
+</table>
+<p class="meta" id="rotation-meta"></p>
+</section>
+</main>
+<footer class="colophon"><span>PRAMAN © DoSJE</span><span>UNIT / D-03 · rotation enforced</span></footer>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Praman — Overview</title>
+<link rel="stylesheet" href="../../lib/praman.css">
+</head>
+<body>
+<div class="strip"><span>DoSJE / MoSJE · Grant-in-Aid Oversight</span><span class="live">LINK ACTIVE</span></div>
+<header class="masthead">
+<div class="kicker">AI Transparency Platform · REV 2.0</div>
+<h1>PRAMAN <span>/ Overview</span></h1>
+<p class="sub">Operator <b id="role">—</b> · Updated <b id="updated">—</b> · Funds tracked in ₹ lakh</p>
+</header>
+<nav class="tabs">
+<a href="./page.html" aria-current="page">Overview <small>01</small></a>
+<a href="../anomalies/page.html">Anomalies <small>02</small></a>
+<a href="../assignments/page.html">Assignments <small>03</small></a>
+<a href="../monitor/page.html">Monitor <small>04</small></a>
+</nav>
+<main class="grid">
+<section class="card span4"><h2 data-unit="FIN-01">Funds released</h2><div class="big" id="funds">—</div><div class="unit">sanctioned vs released vs utilized</div><table class="ledger" id="schemes"></table></section>
+<section class="card span4"><h2 data-unit="GEO-02">Facilities tracked</h2><div class="big" id="facilities">—</div><p class="unit" id="coverage"></p></section>
+<section class="card span4"><h2 data-unit="ALR-03">Open alerts</h2><div class="big red" id="alerts-count">—</div><ul id="alerts"></ul></section>
+</main>
+<p class="meta">Auto-refresh every 30s · figures in ₹ lakh · <b>demo fallback when API offline</b></p>
+<footer class="colophon"><span>PRAMAN © DoSJE</span><span>UNIT / D-01 · funds · facilities · alerts</span></footer>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
