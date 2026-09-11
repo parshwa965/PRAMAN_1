@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Praman — Login</title>
+<link rel="stylesheet" href="../../lib/praman.css">
+</head>
+<body>
+<div class="strip"><span>DoSJE / MoSJE · Inspection Dispatch</span><span class="live">LINK ACTIVE</span></div>
+<header class="masthead">
+<div class="kicker">Sign in</div>
+<h1>LOGIN <span>/ Console</span></h1>
+<p class="sub">Sign in to access role-gated features.</p>
+</header>
+<main class="grid">
+<section class="card span6">
+<h2>Sign in</h2>
+<form id="login-form" class="row">
+<div class="fld"><label class="f" for="userId">User ID</label>
+<input id="userId" name="userId" value="dept1"></div>
+<div class="fld"><label class="f" for="password">Password</label>
+<input id="password" name="password" type="password" value="dept-pass"></div>
+<div class="fld"><label class="f" for="login-btn">&nbsp;</label><button type="submit" id="login-btn" class="btn red">Login</button></div>
+</form>
+<p id="status" role="status"></p>
+<div class="row" style="display:flex; gap:.5rem; margin-top:1rem;">
+  <button type="button" class="btn ghost" data-user="dept1" data-pass="dept-pass">Quick: Dept</button>
+  <button type="button" class="btn ghost" data-user="pmu1" data-pass="pmu-pass">Quick: PMU</button>
+  <button type="button" class="btn ghost" data-user="ngo1" data-pass="ngo-pass">Quick: NGO</button>
+</div>
+</section>
+</main>
+<footer class="colophon"><span>PRAMAN © DoSJE</span></footer>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
