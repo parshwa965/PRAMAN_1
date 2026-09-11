@@ -1,0 +1,52 @@
+[
+  {
+    "id": "BEN-001",
+    "name_hash": "9f1573119609c3b1591b94727f60a1d171762798a0e75edb65a8b504e340ee8f",
+    "aadhaar_masked": "XXXX-XXXX-1001",
+    "dob": "1984-07-08",
+    "scheme": "PM-DAKSH",
+    "facility_id": "FAC-MP-01",
+    "status": "alive",
+    "face_hash": "3da47a427e600f3f5ec1ba295fa7134c"
+  },
+  {
+    "id": "BEN-002",
+    "name_hash": "9f156d5fcd2496b67f3f5e60e14a374052598ce5cdf7a8fe69d28148bc285e1c",
+    "aadhaar_masked": "XXXX-XXXX-1002",
+    "dob": "1967-03-09",
+    "scheme": "SHRESHTA",
+    "facility_id": "FAC-RJ-01",
+    "status": "alive",
+    "face_hash": "12d3e8619893096a9b9ec2d10578c307"
+  },
+  {
+    "id": "BEN-003",
+    "name_hash": "298559c01a9d882a85d5db89d808291120629a754fcdf94ea412a2b0505b800c",
+    "aadhaar_masked": "XXXX-XXXX-1003",
+    "dob": "1947-10-16",
+    "scheme": "e-Anudaan",
+    "facility_id": "FAC-DL-01",
+    "status": "alive",
+    "face_hash": "d9eb88693fd1f0d554938b43581acb81"
+  },
+  {
+    "id": "BEN-004",
+    "name_hash": "776331f2385d1327b1aac6a3bda1f2726b2997bbbd798a7f46ad21000923b111",
+    "aadhaar_masked": "XXXX-XXXX-1004",
+    "dob": "1971-04-19",
+    "scheme": "senior-homes",
+    "facility_id": "FAC-KL-01",
+    "status": "alive",
+    "face_hash": "9d8cd80269eb950cfcd02a195a5d0098"
+  },
+  {
+    "id": "BEN-005",
+    "name_hash": "fd89d3dcbd3c36cdffcf80086cfc8f095b78a519e9597432cc81395a3497a9ea",
+    "aadhaar_masked": "XXXX-XXXX-1005",
+    "dob": "1964-01-17",
+    "scheme": "rehab",
+    "facility_id": "FAC-BR-01",
+    "status": "alive",
+    "face_hash": "cd19bdcc9a5b9e4e6423325e4138dc51"
+  }
+]

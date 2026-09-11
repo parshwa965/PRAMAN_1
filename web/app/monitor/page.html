@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Praman — Monitor</title>
+<link rel="stylesheet" href="../../lib/praman.css">
+</head>
+<body>
+<div class="strip"><span>DoSJE / MoSJE · Field Watch</span><span class="live">LINK ACTIVE</span></div>
+<header class="masthead">
+<div class="kicker">Eyes on every facility · Delhi to Kerala</div>
+<h1>MONITOR <span>/ Wall</span></h1>
+<p class="sub">CCTV wall · heartbeat gaps · random VC surprise checks · Operator <b id="role">—</b></p>
+</header>
+<nav class="tabs">
+<a href="../(dashboard)/page.html">Overview <small>01</small></a>
+<a href="../anomalies/page.html">Anomalies <small>02</small></a>
+<a href="../assignments/page.html">Assignments <small>03</small></a>
+<a href="./page.html" aria-current="page">Monitor <small>04</small></a>
+</nav>
+<main class="grid">
+<section class="card span12"><h2 data-unit="CAM-01">CCTV wall — status online/offline</h2>
+<div class="video-grid" id="cctv-grid">
+<article class="cctv-card" data-facility="fac-012"><h3>fac-012 — Gaya</h3><span class="st online">online</span><time class="hb">last heartbeat: —</time><img class="signed-img" alt="CCTV fac-012"></article>
+<article class="cctv-card" data-facility="fac-021"><h3>fac-021 — Patna</h3><span class="st online">online</span><time class="hb">last heartbeat: —</time><img class="signed-img" alt="CCTV fac-021"></article>
+<article class="cctv-card" data-facility="fac-033"><h3>fac-033 — Muzaffarpur</h3><span class="st offline">offline</span><time class="hb">last heartbeat: —</time><img class="signed-img" alt="CCTV fac-033"></article>
+<article class="cctv-card" data-facility="fac-040"><h3>fac-040 — Bhagalpur</h3><span class="st online">online</span><time class="hb">last heartbeat: —</time><img class="signed-img" alt="CCTV fac-040"></article>
+<article class="cctv-card" data-facility="fac-077"><h3>fac-077 — Darbhanga</h3><span class="st online">online</span><time class="hb">last heartbeat: —</time><img class="signed-img" alt="CCTV fac-077"></article>
+</div>
+<p class="meta" id="cctv-meta">status online/offline · signed-img refreshes with each heartbeat poll</p>
+</section>
+<section class="card span12"><h2 data-unit="VC-02">VC dialer — surprise call</h2>
+<form id="vc-form" class="row">
+<div class="fld"><label class="f" for="vc-facility">Facility</label>
+<select id="vc-facility" name="facility_id">
+<option value="fac-012">fac-012 — Gaya</option>
+<option value="fac-021">fac-021 — Patna</option>
+<option value="fac-033">fac-033 — Muzaffarpur</option>
+<option value="fac-040">fac-040 — Bhagalpur</option>
+<option value="fac-077">fac-077 — Darbhanga</option>
+</select></div>
+<div class="fld"><label class="f" for="surprise-btn">&nbsp;</label><button type="submit" id="surprise-btn" class="btn red">Surprise Call</button></div>
+</form>
+<div id="call-panel" hidden>
+<div class="vids">
+<video id="local-video" autoplay muted playsinline></video>
+<video id="remote-video" autoplay playsinline></video>
+</div>
+<div class="row" style="margin-top:10px">
+<button type="button" id="answer-btn" class="btn ghost">Answer</button>
+<button type="button" id="hangup-btn" class="btn ghost">Hangup</button>
+</div>
+<p id="call-status" role="status">idle</p>
+</div>
+</section>
+</main>
+<footer class="colophon"><span>PRAMAN © DoSJE</span><span>UNIT / D-04 · VC watch</span></footer>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
