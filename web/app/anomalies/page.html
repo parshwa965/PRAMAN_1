@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Praman — Anomaly Inbox</title>
+<link rel="stylesheet" href="../../lib/praman.css">
+</head>
+<body>
+<div class="strip"><span>DoSJE / MoSJE · Fraud Signal Desk</span><span class="live">LINK ACTIVE</span></div>
+<header class="masthead">
+<div class="kicker">Triage queue · scored 0–1</div>
+<h1>ANOMALY <span>/ Inbox</span></h1>
+<p class="sub">Duplicates, headcount, mortality, heartbeat and fund-gap flags with evidence · Operator <b id="role">—</b> · <b id="count">—</b></p>
+</header>
+<nav class="tabs">
+<a href="../(dashboard)/page.html">Overview <small>01</small></a>
+<a href="./page.html" aria-current="page">Anomalies <small>02</small></a>
+<a href="../assignments/page.html">Assignments <small>03</small></a>
+<a href="../monitor/page.html">Monitor <small>04</small></a>
+</nav>
+<main class="grid">
+<section class="card span12"><h2 data-unit="TRI-01">Anomaly inbox — duplicate · headcount · mortality · heartbeat · fund-gap</h2>
+<div class="tabs" role="tablist" aria-label="Anomaly type filter">
+<button data-filter="all" aria-pressed="true">All</button>
+<button data-filter="duplicate" aria-pressed="false">Duplicate</button>
+<button data-filter="headcount" aria-pressed="false">Headcount</button>
+<button data-filter="mortality" aria-pressed="false">Mortality</button>
+<button data-filter="heartbeat" aria-pressed="false">Heartbeat</button>
+<button data-filter="fund-gap" aria-pressed="false">Fund-gap</button>
+</div>
+<p id="status" role="status">Loading anomalies…</p>
+<table class="ledger" aria-label="Anomaly inbox">
+<thead><tr><th class="n">Score</th><th>Type</th><th>Facility</th><th>Detail</th><th>Evidence</th><th>Action</th></tr></thead>
+<tbody id="rows"></tbody>
+</table>
+<p class="meta">Scores 0–1, higher = stronger signal · verify/dismiss needs Dept or PMU role · demo fallback when API offline</p>
+</section>
+</main>
+<footer class="colophon"><span>PRAMAN © DoSJE</span><span>UNIT / D-02 · anomaly triage</span></footer>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

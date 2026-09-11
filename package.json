@@ -1,0 +1,20 @@
+{
+  "name": "praman",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Praman AI Transparency Platform - DoSJE/MoSJE grant and inspection transparency",
+  "workspaces": [
+    "api",
+    "web"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "api:start": "npm --workspace api start",
+    "api:test": "npm --workspace api test",
+    "api:migrate": "npm --workspace api run migrate",
+    "api:seed": "npm --workspace api run seed",
+    "web:serve": "npm --workspace web run serve"
+  }
+}
