@@ -54,6 +54,34 @@ Manual audits are slow, predictable, and easy to game. Praman replaces them with
 
 ---
 
+## 📸 Screenshots
+
+Captured from the [live demo](https://praman-sih-2026.netlify.app/app/login/page.html) on 23 October 2026.
+
+### Login / Console — role-based sign-in with quick demo access (Dept / PMU / NGO)
+
+![Praman Login](docs/screenshots/01-login.png)
+
+### Overview Dashboard — funds released, facilities, scheme-wise grants and open alerts
+
+![Praman Overview Dashboard](docs/screenshots/02-dashboard.png)
+
+### Anomaly Inbox — scored fraud signals (mortality, fund-gap, duplicate, headcount, heartbeat) with Verify / Dismiss
+
+![Praman Anomaly Inbox](docs/screenshots/03-anomalies.png)
+
+### Assign Console — random inspector draw with rotation audit log
+
+![Praman Assign Console](docs/screenshots/04-assignments.png)
+
+### Monitor Wall — live CCTV tiles and surprise VC dialer
+
+![Praman Monitor Wall](docs/screenshots/05-monitor.png)
+
+> Note: In the public demo, the CCTV tiles show **OFFLINE** because no live cameras or backend API are connected — the demo runs on fallback data. With a facility camera registered and the API running, the same tiles show the live feed and heartbeat status.
+
+---
+
 ## 🚨 Fraud Matrix — What Praman Checks (P1–P5)
 
 | ID | Fraud Class | How Praman Detects / Blocks It |
